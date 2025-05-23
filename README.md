@@ -1,6 +1,6 @@
 ﻿# MoviesKnowledgeGraphAkademia - Migrador de Películas (3 OCs)
 
-Aplicación de consola en .NET 6 para migrar información de películas desde archivos JSON (formato OMDB) hacia una plataforma GNOSS basada en grafos de conocimiento.
+Aplicación de consola en .NET 6 para migrar información de películas a GNOSS Semantic AI Platform.
 
 ## 📋 Características
 
@@ -13,9 +13,8 @@ Aplicación de consola en .NET 6 para migrar información de películas desde ar
 ## 🚀 Requisitos Previos
 
 - .NET 6.0 SDK o superior
-- Acceso a una instancia de GNOSS
-- Archivos JSON con información de películas en formato OMDB
-- Token de autenticación OAuth para GNOSS
+- Acceso a una comunidad de GNOSS (OAuth)
+- Archivos JSON con información de películas (./Data)
 
 ## 📦 Instalación
 
