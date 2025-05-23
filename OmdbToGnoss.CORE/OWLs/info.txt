@@ -1,0 +1,2 @@
+Path en el que colocar las ontologías
+Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"OWLs"))

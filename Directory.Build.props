@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <SolutionVersion>1.2.3.4</SolutionVersion>
+    <Version>$(SolutionVersion)</Version>
+    <AssemblyVersion>$(SolutionVersion)</AssemblyVersion>
+    <FileVersion>$(SolutionVersion)</FileVersion>
+  </PropertyGroup>
+</Project>
