@@ -29,14 +29,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-	<ItemGroup>
+  <ItemGroup>
 		<Content Include="OWLs\**\*.*">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
-	</ItemGroup>
-    <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
 	    <Content Include="Data\**\*.*">
-		    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	    </Content>
-    </ItemGroup>
+  </ItemGroup>
 </Project>
