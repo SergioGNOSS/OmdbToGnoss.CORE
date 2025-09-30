@@ -30,7 +30,7 @@ dotnet restore
 ```
 
 3. Configura OAuth:
-   - Copia `Config/ConfigOAuth/OAuth_V3.config.template` a `Config/ConfigOAuth/OAuth_V3.config`
+   - Copia `Config/ConfigOAuth/OAuth.config.template` a `Config/ConfigOAuth/OAuth.config`
    - Edita el archivo con tus credenciales:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -82,7 +82,7 @@ Introduce el número de películas que quieres cargar (Por defecto: 1 / Máximo:
 OmdbToGnoss.CORE/
 ├── Config/
 │   └── ConfigOAuth/
-│       └── OAuth_V3.config.template
+│       └── OAuth.config.template
 ├── Data/
 │   ├── *.json (archivos de películas)
 │   ├── Peliculas.csv (cache de GUIDs)
