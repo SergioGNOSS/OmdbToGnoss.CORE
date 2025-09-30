@@ -180,7 +180,7 @@ namespace OmdToGnoss.CORE
             try
             {
                 // Ruta del archivo de configuración
-                string configPath = Path.Combine("Config", "ConfigOAuth", "OAuth_V3.config");
+                string configPath = Path.Combine("Config", "ConfigOAuth", "OAuth.config");
 
                 // Verificar si el archivo existe
                 if (!File.Exists(configPath))
