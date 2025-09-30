@@ -27,10 +27,7 @@
   <ItemGroup>
     <None Update="Config\ConfigOAuth\OAuth.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Config\ConfigOAuth\OAuth_V3.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </None>    
   </ItemGroup>
   <ItemGroup>
 		<Content Include="OWLs\**\*.*">

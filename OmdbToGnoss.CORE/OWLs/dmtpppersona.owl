@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:schema="http://schema.org/"
+    xmlns:try="http://try.gnoss.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://try.gnoss.com/ontology/comunidad/akademia/dmtpppersona.owl#"
+  xml:base="http://try.gnoss.com/ontology/comunidad/akademia/dmtpppersona.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:about="http://schema.org/Person">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Persona</rdfs:label>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://try.gnoss.com/ontology#actorOf">
+    <rdfs:domain rdf:resource="http://schema.org/Person"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Actor / Actriz de</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://try.gnoss.com/ontology#authorOf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Autor / Autora de</rdfs:label>
+    <rdfs:domain rdf:resource="http://schema.org/Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://try.gnoss.com/ontology#directorOf">
+    <rdfs:domain rdf:resource="http://schema.org/Person"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Director / Directora de</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:FunctionalProperty rdf:about="http://schema.org/name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://schema.org/Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Nombre</rdfs:label>
+  </owl:FunctionalProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

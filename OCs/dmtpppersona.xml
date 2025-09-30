@@ -1,0 +1,130 @@
+<config>
+    <ConfiguracionGeneral>
+        <namespace>dmtpppersona</namespace>
+        <idiomasOnto>
+            <idiomaOnto>es</idiomaOnto>
+        </idiomasOnto>
+        <ocultarTituloDescpImgDoc></ocultarTituloDescpImgDoc>
+        <TituloDoc EntidadID="http://schema.org/Person">http://schema.org/name</TituloDoc>
+        <DescripcionDoc EntidadID="http://schema.org/Person">http://schema.org/name</DescripcionDoc>
+        <HtmlNuevo>true</HtmlNuevo>
+		<!-- <GruposEditoresFijos>
+			<Grupo>administrado</Grupo>
+		</GruposEditoresFijos>				 -->
+		<OcultarBloqueCompartirEdicion></OcultarBloqueCompartirEdicion>
+		<OcultarUtilsDoc></OcultarUtilsDoc>
+		<OcultarPublicadorDoc></OcultarPublicadorDoc>		
+		<OcultarEtiquetasDoc></OcultarEtiquetasDoc>		
+		<OcultarBloquePropiedadIntelectualEdicion></OcultarBloquePropiedadIntelectualEdicion>
+		<OcultarBloquePrivacidadSeguridadEdicion></OcultarBloquePrivacidadSeguridadEdicion>
+        <CategorizacionTesauroGnossObligatoria>false</CategorizacionTesauroGnossObligatoria>		
+    </ConfiguracionGeneral>
+    <EspefPropiedad>
+        <Propiedad  ID="http://schema.org/name" EntidadID="http://schema.org/Person">
+            <AtrNombre>Nombre</AtrNombre>
+            <AtrNombreLectura>Nombre</AtrNombreLectura>
+        </Propiedad>
+		<!-- Entidades externas -->
+		<Propiedad  ID="http://try.gnoss.com/ontology#actorOf" EntidadID="http://schema.org/Person">
+            <AtrNombre>Actor / Actriz de</AtrNombre>
+            <AtrNombreLectura>Actor / Actriz de</AtrNombreLectura>
+			<SeleccionEntidad>						
+				<TipoSeleccion>Autocompletar</TipoSeleccion>			
+				<LinkARecurso IrAComunidad="true"></LinkARecurso>				
+				<Grafo>dmtpppelicula.owl</Grafo>
+				<UrlTipoEntSolicitada>http://schema.org/Movie</UrlTipoEntSolicitada>
+				<PropsEntEdicion>
+					<NameProp>http://schema.org/name</NameProp>
+				</PropsEntEdicion>
+				<PropsEntLectura>
+					 <Propiedad  ID="http://schema.org/name" EntidadID="http://schema.org/Movie">
+						<AtrNombre>Nombre</AtrNombre>
+						<AtrNombreLectura>Nombre</AtrNombreLectura>
+					</Propiedad>
+				</PropsEntLectura>
+				<Reciproca></Reciproca>	
+				<ConsultaReciproca><![CDATA[SELECT DISTINCT(?pelicula) WHERE {?pelicula a <http://schema.org/Movie>. ?pelicula <http://schema.org/actor> ?actor FILTER (?actor = @EntidadID@)}]]></ConsultaReciproca>
+			</SeleccionEntidad>
+        </Propiedad>
+        <Propiedad  ID="http://try.gnoss.com/ontology#authorOf" EntidadID="http://schema.org/Person">
+            <AtrNombre>Autor / Autora de</AtrNombre>
+            <AtrNombreLectura>Autor / Autora de</AtrNombreLectura>
+			<SeleccionEntidad>						
+				<TipoSeleccion>Autocompletar</TipoSeleccion>			
+				<LinkARecurso IrAComunidad="true"></LinkARecurso>				
+				<Grafo>dmtpppelicula.owl</Grafo>
+				<UrlTipoEntSolicitada>http://schema.org/Movie</UrlTipoEntSolicitada>
+				<PropsEntEdicion>
+					<NameProp>http://schema.org/name</NameProp>
+				</PropsEntEdicion>
+				<PropsEntLectura>
+					 <Propiedad  ID="http://schema.org/name" EntidadID="http://schema.org/Movie">
+						<AtrNombre>Nombre</AtrNombre>
+						<AtrNombreLectura>Nombre</AtrNombreLectura>
+					</Propiedad>
+				</PropsEntLectura>
+				<Reciproca></Reciproca>	
+				<ConsultaReciproca><![CDATA[SELECT DISTINCT(?pelicula) WHERE {?pelicula a <http://schema.org/Movie>. ?pelicula <http://schema.org/author> ?autor FILTER (?autor = @EntidadID@)}]]></ConsultaReciproca>
+			</SeleccionEntidad>
+        </Propiedad>
+        <Propiedad  ID="http://try.gnoss.com/ontology#directorOf" EntidadID="http://schema.org/Person">
+            <AtrNombre>Director / Directora de</AtrNombre>
+            <AtrNombreLectura>Director / Directora de</AtrNombreLectura>
+			<SeleccionEntidad>						
+				<TipoSeleccion>Autocompletar</TipoSeleccion>			
+				<LinkARecurso IrAComunidad="true"></LinkARecurso>				
+				<Grafo>dmtpppelicula.owl</Grafo>
+				<UrlTipoEntSolicitada>http://schema.org/Movie</UrlTipoEntSolicitada>
+				<PropsEntEdicion>
+					<NameProp>http://schema.org/name</NameProp>
+				</PropsEntEdicion>
+				<PropsEntLectura>
+					 <Propiedad  ID="http://schema.org/name" EntidadID="http://schema.org/Movie">
+						<AtrNombre>Nombre</AtrNombre>
+						<AtrNombreLectura>Nombre</AtrNombreLectura>
+					</Propiedad>
+				</PropsEntLectura>
+				<Reciproca></Reciproca>	
+				<ConsultaReciproca><![CDATA[SELECT DISTINCT(?pelicula) WHERE {?pelicula a <http://schema.org/Movie>. ?pelicula <http://schema.org/director> ?director FILTER (?director = @EntidadID@)}]]></ConsultaReciproca>
+			</SeleccionEntidad>
+        </Propiedad>
+    </EspefPropiedad>
+    <EspefEntidad>
+        <Entidad  ID="http://schema.org/Person">
+            <AtrNombre>Persona</AtrNombre>
+            <AtrNombreLectura>Persona</AtrNombreLectura>
+            <OrdenEntidad>
+                <Grupo class="formtheme02">
+                    <Grupo class="fieldset">
+                        <Grupo Tipo="fieldset" class="mediumLabels">
+                            <NameProp>http://schema.org/name</NameProp>
+                        </Grupo>
+                    </Grupo>
+                </Grupo>
+            </OrdenEntidad>
+            <OrdenEntidadLectura>
+                <Grupo classLectura="contentGroup contenidoPrincipal">
+                    <Grupo classLectura="group title">
+                        <Grupo Tipo="titulo">
+                            <NameProp>http://schema.org/name</NameProp>
+                        </Grupo>
+                        <Grupo Tipo="subtitulo">
+                            <NameProp>http://schema.org/name</NameProp>
+                        </Grupo>
+                    </Grupo>
+                </Grupo>
+                <Grupo classLectura="group content semanticView">
+                    <Grupo classLectura="group group_info">
+                        <AtrNombreGrupo>Propiedades</AtrNombreGrupo>
+                        <Grupo classLectura="contentGroup">
+							<NameProp>http://schema.org/name</NameProp>
+                            <NameProp>http://try.gnoss.com/ontology#actorOf</NameProp> 
+                            <NameProp>http://try.gnoss.com/ontology#authorOf</NameProp> 
+                            <NameProp>http://try.gnoss.com/ontology#directorOf</NameProp> 
+                        </Grupo>
+                    </Grupo>
+                </Grupo>
+            </OrdenEntidadLectura>
+        </Entidad>
+    </EspefEntidad>
+</config>

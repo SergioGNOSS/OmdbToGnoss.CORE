@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:schema="http://schema.org/"
-    xmlns="http://try.gnoss.com/ontology/comunidad/akademia/urnpln25pelicula.owl#"
+    xmlns="http://try.gnoss.com/ontology/comunidad/akademia/dmtpppelicula.owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xml:base="http://try.gnoss.com/ontology/comunidad/akademia/urnpln25pelicula.owl">
+  xml:base="http://try.gnoss.com/ontology/comunidad/akademia/dmtpppelicula.owl">
   <owl:Ontology rdf:about=""/>
   <owl:Class rdf:about="http://schema.org/Rating">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"

@@ -14,7 +14,7 @@ namespace OmdbToGnoss.CORE
         {
             _configPath = Path.GetFullPath(Path.Combine(
                 AppDomain.CurrentDomain.BaseDirectory,
-                @"Config\ConfigOAuth\OAuth_V3.config"));
+                @"Config\ConfigOAuth\OAuth.config"));
 
             _resourceApi = new ResourceApi(_configPath);
             _communityApi = new CommunityApi(_configPath);

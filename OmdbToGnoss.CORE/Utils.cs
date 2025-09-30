@@ -175,7 +175,7 @@ namespace OmdToGnoss.CORE
         public static void LeerOAuth()
         {
             Console.WriteLine($"\n-------------------------------------------");
-            Console.WriteLine($"Leyendo información del archivo OAuth en ./Config/ConfigOAuth/OAuth_V3.config");
+            Console.WriteLine($"Leyendo información del archivo OAuth en ./Config/ConfigOAuth/OAuth.config");
 
             try
             {
